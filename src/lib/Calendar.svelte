@@ -1,14 +1,9 @@
 <script>
-  let cats = [
-		{ name: 'Keyboard Cat' },
-		{ name: 'Maru' },
-		{ name: 'Henri The Existential Cat' },
-		{ name: 'Henri The Existential Cat' },
-		{ name: 'Henri The Existential Cat' },
-		{ name: 'Henri The Existential Cat' },
-		{ name: 'Henri The Existential Cat' },
-		{ name: 'Henri The Existential Cat' },
-	];
+	/**
+	 * @type {any}
+	 */
+   export let rockets = [];
+  //  console.log({rockets});
 </script>
 
 <ul>
@@ -20,12 +15,13 @@
   <li>Sat</li>
   <li>Sun</li>
 </ul>
+
 <ul>
-  {#each cats as { name }, i}
-		<li>
-			{i}
-		</li>
-	{/each}
+  {#each rockets as { rocket_name }, i}
+    <li>
+      {rocket_name}
+    </li>
+  {/each}
 </ul>
 
 <style lang="scss">
